@@ -1,0 +1,44 @@
+<!--Design an application to announce 3 winners of Lottery with respective images?--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="winner()">click here</button>
+    <br>
+    result:
+    <p id="image"></p>
+    <img id="img"></img>
+    <br>
+   
+    <script>
+        function winner(){
+            let randomnumber= document.getElementById('image').innerHTML=Math.floor(Math.random()*4+1);
+            let x = document.createElement("img");
+            switch(randomnumber){
+                   case 1:
+                    img.src="D:/javascript/lottery draw/images/ajay.jpg";
+                    document.body.appendChild(x);
+                    break;
+                    case 2:
+                    img.src="D:/javascript/lottery draw/images/ismail.jpg";
+                    document.body.appendChild(x);
+                    break;
+                    case 3:
+                    img.src="D:/javascript/lottery draw/images/rebel.jpeg";
+                    document.body.appendChild(x);
+                    break;
+                    case 4:
+                    img.src="D:/javascript/lottery draw/images/vinay.jpg";
+                    document.body.appendChild(x);
+                    break;
+            }     
+           
+        }
+    </script>
+</body>
+</html>
